@@ -79,3 +79,37 @@
     
 
 // }
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+    cin>>t;
+
+    while (t--)
+    {
+        int count = 1;
+        int moves;
+        cin>> moves;
+        string s;
+        cin >> s;
+        for(int i = 1 ; i < s.length() ; )
+        {
+            if(s[i-1]!=s[i])
+            {
+            count++;
+            i++;
+            }
+            else{
+            i=i+2;
+            count++;
+            }
+        }
+        cout<<count<<"\n"; 
+    }  
+}
